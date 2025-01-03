@@ -8,15 +8,17 @@ variable "environment" {
 
 variable "common_tags" {
     default = {
-        Project = "expense-bastion"
-        Environment = "dev"
+        Project = "expense"
         Terraform = "true"
+        Environment = "dev"
     }
 }
 
 
-variable "bastion_tags" {
-    default = {
-        Component = "bastion"
-    }
+variable "zone_name" {
+    default = "devops1289s.online"
+}
+
+variable "zone_id" {
+    default = "Z00627433U7UR5KQZSUZM"
 }

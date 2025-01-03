@@ -15,8 +15,12 @@ variable "common_tags" {
 }
 
 
-variable "bastion_tags" {
+variable "frontend_tags" {
     default = {
-        Component = "bastion"
+        Component = "backend"
     }
+}
+
+variable "zone_name" {
+    default = "devops1289.online"
 }
